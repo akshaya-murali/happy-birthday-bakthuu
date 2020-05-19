@@ -42,7 +42,7 @@ a{
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 2rem;
+    padding: 0 0rem;
     /*overlay*/
     position: absolute;
     top:0px;
