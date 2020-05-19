@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section id="mem1">
+            <div class="mem1-content">
+                <h1 class="ml3">Happy Memories</h1>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            </div>
+
+        </section>
+        
+        <section id=mem_pic1>
+            <img src="./videos and pics/mem_pic1.png" style="width: 100%; height: 100%;">
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./videos and pics/grp_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section id=mem_pic1>
+            <img src="./new_pics/PANEL5.png" style="width: 100%; height: 100%;">
+        </section>
+        <section>
+            <div class="mid-content">
+                <h3>GUNDUU GIRL WHO TEACHES HOW TO EAT</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/eat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+
+        <section>
+            <div class="mid-content">
+                <h3>ONE WHO TEACHES HOW TO DANCE</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/teach steps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+
+        <section>
+            <div class="mid-content">
+                <h3>THE ONE SONG WHERE EVERY SINGLE PERSON DANCES</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/ooo steps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+
+        <section>
+            <div class="mid-content">
+                <h3>WE'LL ALWAYS MISS YOU AND OUR CLASS FUN</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/DANCE1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/DANCE2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section>
+            <div class="mid-content">
+                <h3>ANDD SORRY FOR THISS &#128514;</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/main video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section id=mem_pic1>
+            <img src="./new_pics/panel2mem.png" style="width: 100%; height: 100%;">
+        </section>
+        <section id=mem_pic1>
+            <img src="./new_pics/PANEL3.png" style="width: 100%; height: 100%;">
+        </section>
+        
+        <section id=mem_pic1>
+            <img src="./new_pics/PANEL4.png" style="width: 100%; height: 100%;">
+        </section>
+
+
+
+        <script>
+            var textWrapper = document.querySelector('.ml3');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i+1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <section id="sec1">
+            <div class="sec1-content">
+                <h1 class="l-heading"><i>HAPPY BIRTHDAY BAKTHA!!!</i></h1>
+                <h2>Wish you Many More Smiles And Laughter</h2>
+                <a href="#sec2" class="btn">LOVE BAKTHU</a>
+            </div>
+
+        </section>
+        <section id="sec2">
+
+            <!-- Automatic Slideshow Images -->
+            <div class="mySlides w3-display-container w3-center">
+                <img src="./videos and pics/slide1.png" style="width:100%">
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="./videos and pics/slide2.png" style="width:100%">
+                
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="./videos and pics/slide3.png" style="width:100%">
+            </div>
+            
+        </section>
+        <section id="sec3">
+            <img src="./videos and pics/panel1.png" style="width: 100%; height:100%;">
+        </section>
+        <section id="sec4">
+            <a href="./memories.html" class="btn-1">Click here for Our Memories</a>
+        </section>
+        <script>
+
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000);    
+            }
+        </script>
+</body>
+</html>

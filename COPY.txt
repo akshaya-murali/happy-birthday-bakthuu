@@ -1,0 +1,312 @@
+INDEXX
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <section id="sec1">
+            <div class="sec1-content">
+                <h1 class="l-heading"><i>HAPPY BIRTHDAY BAKTHA!!!</i></h1>
+                <h2>Wish you Many More Smiles And Laughter</h2>
+                <a href="#sec2" class="btn">LOVE BAKTHU</a>
+            </div>
+
+        </section>
+        <section id="sec2">
+
+            <!-- Automatic Slideshow Images -->
+            <div class="mySlides w3-display-container w3-center">
+                <img src="./videos and pics/slide1.png" style="width:100%">
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="./videos and pics/slide2.png" style="width:100%">
+                
+            </div>
+            <div class="mySlides w3-display-container w3-center">
+                <img src="./videos and pics/slide3.png" style="width:100%">
+            </div>
+            
+        </section>
+        <section id="sec3">
+            <img src="./videos and pics/panel1.png" style="width: 100%; height:100%;">
+        </section>
+        <section id="sec4">
+            <a href="./memories.html" class="btn-1">Click here for Our Memories</a>
+        </section>
+        <script>
+
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 2000);    
+            }
+        </script>
+</body>
+</html>
+
+
+
+MEMORIES
+
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <section id="mem1">
+            <div class="mem1-content">
+                <h1 class="ml3">Happy Memories</h1>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            </div>
+
+        </section>
+        
+        <section id=mem_pic1>
+            <img src="./videos and pics/mem_pic1.png" style="width: 100%; height: 100%;">
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./videos and pics/grp_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section id=mem_pic1>
+            <img src="./new_pics/PANEL5.png" style="width: 100%; height: 100%;">
+        </section>
+        <section>
+            <div class="mid-content">
+                <h3>GUNDUU GIRL WHO TEACHES HOW TO EAT</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/eat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+
+        <section>
+            <div class="mid-content">
+                <h3>ONE WHO TEACHES HOW TO DANCE</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/teach steps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+
+        <section>
+            <div class="mid-content">
+                <h3>THE ONE SONG WHERE EVERY SINGLE PERSON DANCES</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/ooo steps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+
+        <section>
+            <div class="mid-content">
+                <h3>WE'LL ALWAYS MISS YOU AND OUR CLASS FUN</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/DANCE1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/DANCE2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section>
+            <div class="mid-content">
+                <h3>ANDD SORRY FOR THISS &#128514;</h3>
+
+            </div>
+        </section>
+        <section id="video-1">
+            <video width="100%" height="500" controls autoplay>
+                <source src="./new_pics/videos/main video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>      
+        </section>
+        <section id=mem_pic1>
+            <img src="./new_pics/panel2mem.png" style="width: 100%; height: 100%;">
+        </section>
+        <section id=mem_pic1>
+            <img src="./new_pics/PANEL3.png" style="width: 100%; height: 100%;">
+        </section>
+        
+        <section id=mem_pic1>
+            <img src="./new_pics/PANEL4.png" style="width: 100%; height: 100%;">
+        </section>
+
+
+
+        <script>
+            var textWrapper = document.querySelector('.ml3');
+            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+            anime.timeline({loop: true})
+            .add({
+                targets: '.ml3 .letter',
+                opacity: [0,1],
+                easing: "easeInOutQuad",
+                duration: 2250,
+                delay: (el, i) => 150 * (i+1)
+            }).add({
+                targets: '.ml3',
+                opacity: 0,
+                duration: 1000,
+                easing: "easeOutExpo",
+                delay: 1000
+            });
+        </script>
+    </body>
+</html>
+
+
+STYLE
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.l-heading{
+    font-size: 3rem;
+    margin-bottom:0.75rem;
+}
+.btn{
+    display: inline-block;
+    color: #333;
+    background: #d3b8c2;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+.btn-1{
+    display: inline-block;
+    color: #333;
+    background: #d4c1c9;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+a{
+    text-decoration: none;
+}
+#sec1{
+    background: #333 url('./videos and pics/GreetingCard.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+
+}
+#sec1 .sec1-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /*overlay*/
+    position: absolute;
+    top:0px;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.6);
+}
+#sec2{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#sec4{
+    background: url('./videos and pics/Untitled design.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+/*memory page*/
+#mem1{
+    background: #333 url('/videos and pics/Screenshot_20200508_232508_com.android.chrome.jpg') no-repeat center center/cover;
+    height: 30vh;
+    color: white;
+
+}
+#mem1 .mem1-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    padding: 0 2rem;
+    /*overlay*/
+    position: absolute;
+    top:0px;
+    left:0;
+    right:0;
+    background-color: rgba(0,0,0,0.6);
+}
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+
+.mid-content{
+    background: rgb(243, 195, 217);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
